@@ -24,6 +24,10 @@
 		2BD8AD14179535F80032D47A /* FFCircularProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8AD13179535F80032D47A /* FFCircularProgressViewTests.m */; };
 		2BD8AD1F1795362C0032D47A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8AD1E1795362C0032D47A /* ViewController.m */; };
 		2BE6133A1795B29800DE2FA0 /* FFCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE613391795B29800DE2FA0 /* FFCircularProgressView.m */; };
+		AAEF3C381BD038070000509E /* FFCircularProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE613381795B29800DE2FA0 /* FFCircularProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEF3C391BD038070000509E /* UIColor+iOS7.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6E80531795B494002F3C9F /* UIColor+iOS7.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEF3C3A1BD0380D0000509E /* FFCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE613391795B29800DE2FA0 /* FFCircularProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		AAEF3C3B1BD0380D0000509E /* UIColor+iOS7.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E80541795B494002F3C9F /* UIColor+iOS7.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,8 @@
 		2BD8AD1E1795362C0032D47A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2BE613381795B29800DE2FA0 /* FFCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCircularProgressView.h; sourceTree = "<group>"; };
 		2BE613391795B29800DE2FA0 /* FFCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCircularProgressView.m; sourceTree = "<group>"; };
+		AAEF3C301BD037DA0000509E /* FFCircularProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFCircularProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEF3C341BD037DA0000509E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAEF3C2C1BD037DA0000509E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,6 +108,7 @@
 				2B6E80501795B3AE002F3C9F /* SenTestingKit.framework */,
 				2BD8ACF4179535F80032D47A /* FFCircularProgressView */,
 				2BD8AD0D179535F80032D47A /* FFCircularProgressViewTests */,
+				AAEF3C311BD037DA0000509E /* iOS Framework */,
 				2BD8ACED179535F80032D47A /* Frameworks */,
 				2BD8ACEC179535F80032D47A /* Products */,
 			);
@@ -105,6 +119,7 @@
 			children = (
 				2BD8ACEB179535F80032D47A /* FFCircularProgressView.app */,
 				2BD8AD06179535F80032D47A /* FFCircularProgressViewTests.xctest */,
+				AAEF3C301BD037DA0000509E /* FFCircularProgressView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,7 +190,27 @@
 			path = FFCircularProgressView;
 			sourceTree = "<group>";
 		};
+		AAEF3C311BD037DA0000509E /* iOS Framework */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF3C341BD037DA0000509E /* Info.plist */,
+			);
+			path = "iOS Framework";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AAEF3C2D1BD037DA0000509E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEF3C391BD038070000509E /* UIColor+iOS7.h in Headers */,
+				AAEF3C381BD038070000509E /* FFCircularProgressView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2BD8ACEA179535F80032D47A /* FFCircularProgressView */ = {
@@ -213,6 +248,24 @@
 			productReference = 2BD8AD06179535F80032D47A /* FFCircularProgressViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AAEF3C2F1BD037DA0000509E /* iOS Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEF3C371BD037DA0000509E /* Build configuration list for PBXNativeTarget "iOS Framework" */;
+			buildPhases = (
+				AAEF3C2B1BD037DA0000509E /* Sources */,
+				AAEF3C2C1BD037DA0000509E /* Frameworks */,
+				AAEF3C2D1BD037DA0000509E /* Headers */,
+				AAEF3C2E1BD037DA0000509E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Framework";
+			productName = "iOS Framework";
+			productReference = AAEF3C301BD037DA0000509E /* FFCircularProgressView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +277,9 @@
 				TargetAttributes = {
 					2BD8AD05179535F80032D47A = {
 						TestTargetID = 2BD8ACEA179535F80032D47A;
+					};
+					AAEF3C2F1BD037DA0000509E = {
+						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
 			};
@@ -241,6 +297,7 @@
 			targets = (
 				2BD8ACEA179535F80032D47A /* FFCircularProgressView */,
 				2BD8AD05179535F80032D47A /* FFCircularProgressViewTests */,
+				AAEF3C2F1BD037DA0000509E /* iOS Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD8AD12179535F80032D47A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEF3C2E1BD037DA0000509E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +347,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD8AD14179535F80032D47A /* FFCircularProgressViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEF3C2B1BD037DA0000509E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEF3C3A1BD0380D0000509E /* FFCircularProgressView.m in Sources */,
+				AAEF3C3B1BD0380D0000509E /* UIColor+iOS7.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +539,64 @@
 			};
 			name = Release;
 		};
+		AAEF3C351BD037DA0000509E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "iOS Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = it.francesconi.FFCircularProgressView;
+				PRODUCT_NAME = FFCircularProgressView;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAEF3C361BD037DA0000509E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "iOS Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = it.francesconi.FFCircularProgressView;
+				PRODUCT_NAME = FFCircularProgressView;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,6 +626,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AAEF3C371BD037DA0000509E /* Build configuration list for PBXNativeTarget "iOS Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEF3C351BD037DA0000509E /* Debug */,
+				AAEF3C361BD037DA0000509E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
